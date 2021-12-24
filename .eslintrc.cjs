@@ -1,6 +1,7 @@
 module.exports = {
   env: {
-    browser: true,
+    node: true,
+    browser: false,
     es2021: true,
   },
   extends: [
@@ -12,6 +13,8 @@ module.exports = {
   },
   rules: {
     'import/extensions': 0,
-    'import/no-unresolved': 0
+    'import/no-unresolved': 0,
+    'import/prefer-default-export': 0,
+    'consistent-return': 0
   },
 };

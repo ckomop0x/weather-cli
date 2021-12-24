@@ -1,22 +1,25 @@
 #!/usr/bin/env node
 import getArgs from './helpers/getArgs.js';
-import { printHelp } from './services/log.service.js';
-import { saveToken } from './services/token.service.js';
-import { getWeather } from './services/api.service.js';
+import { printHelp, printWeather } from './services/log.service.js';
+import { saveCity, saveToken } from './services/settings.service.js';
+import getForecast from './helpers/getForecast.js';
 
-const initCLI = () => {
-  const args = getArgs(process.argv);
-  if (args.h) {
+const initCLI = async () => {
+  const { h: help, c: city, t: token } = getArgs(process.argv);
+
+  if (help) {
     return printHelp();
   }
-  if (args.s) {
-    // Save city
-    return true;
+  if (city) {
+    return saveCity(city);
   }
-  if (args.t) {
-    return saveToken(args.t);
+  if (token) {
+    return saveToken(token);
   }
-  // Output weather
-  return getWeather('Hoofddorp');
+
+  const forecast = await getForecast();
+
+  return printWeather(forecast);
 };
+
 initCLI();

@@ -1,12 +1,9 @@
-import https from 'https';
 import axios from 'axios';
 import { loadKeyValue } from './storage.service.js';
-import { LANG, TOKEN_DICTIONARY } from '../helpers/const.js';
-import { printError, printSuccess } from './log.service.js';
+import { LANG, SETTINGS } from '../helpers/const.js';
 
-// eslint-disable-next-line import/prefer-default-export
 export const getWeather = async (city) => {
-  const token = await loadKeyValue(TOKEN_DICTIONARY.token);
+  const token = process.env.TOKEN ?? await loadKeyValue(SETTINGS.token);
 
   if (!token) {
     throw new Error('No API key defined, please add key with -t [API_KEY]');
@@ -20,5 +17,6 @@ export const getWeather = async (city) => {
       units: 'metric',
     },
   });
+
   return data;
 };
