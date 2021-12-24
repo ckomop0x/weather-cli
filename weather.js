@@ -17,6 +17,6 @@ const initCLI = () => {
     return saveToken(args.t);
   }
   // Output weather
-  return getWeather('Amsterdam');
+  return getWeather('Hoofddorp');
 };
 initCLI();
