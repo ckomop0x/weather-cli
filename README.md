@@ -32,6 +32,9 @@ npx @ckomop0x/weather-cli
 
 ## Usage
 
+First, you need to add token from https://openweathermap.org/ and 
+city for which you want to get a forecast, and then just run. 
+
 ```sh
 weather
 ```
