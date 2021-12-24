@@ -2,6 +2,7 @@
 import getArgs from './helpers/getArgs.js';
 import { printHelp } from './services/log.service.js';
 import { saveToken } from './services/token.service.js';
+import { getWeather } from './services/api.service.js';
 
 const initCLI = () => {
   const args = getArgs(process.argv);
@@ -16,6 +17,6 @@ const initCLI = () => {
     return saveToken(args.t);
   }
   // Output weather
-  return {};
+  return getWeather('Amsterdam');
 };
 initCLI();
