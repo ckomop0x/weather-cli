@@ -14,7 +14,7 @@
   </a>
 </p>
 
-> CLI for getting weather
+CLI for getting weather forecast.
 
 ### 🏠 [Homepage](https://github.com/ckomop0x/weather-cli)
 
