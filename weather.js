@@ -1,11 +1,11 @@
 #!/usr/bin/env node
 import getArgs from './helpers/getArgs.js';
+import { printHelp } from './services/log.service.js';
 
 const initCLI = () => {
   const args = getArgs(process.argv);
-  console.log(args);
   if (args.h) {
-    // Help
+    printHelp();
   }
   if (args.s) {
     // Save city
@@ -13,5 +13,6 @@ const initCLI = () => {
   if (args.t) {
     // Save token
   }
+  // Output weather
 };
 initCLI();
