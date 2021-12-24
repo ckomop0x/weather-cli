@@ -21,7 +21,13 @@ CLI for getting weather forecast.
 ## Install
 
 ```sh
-npm install
+npm install -g @ckomop0x/weather-cli
+```
+
+or just run
+
+```sh
+npx @ckomop0x/weather-cli
 ```
 
 ## Usage
