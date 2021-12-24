@@ -1,5 +1,6 @@
 {
-  "name": "weather-cli",
+  "name": "@ckomop0x/weather-cli",
+  "private": false,
   "version": "1.0.0",
   "description": "CLI for getting weather",
   "main": "weather.js",
@@ -17,14 +18,14 @@
   ],
   "author": "Pavel Klochkov",
   "license": "ISC",
-  "homepage": "",
+  "homepage": "https://github.com/ckomop0x/weather-cli",
   "repository": {
-    "type": "",
-    "url": ""
+    "type": "git",
+    "url": "https://github.com/ckomop0x/weather-cli"
   },
   "bugs": {
-    "url": "",
-    "email": ""
+    "url": "https://github.com/ckomop0x/weather-cli/issues",
+    "email": "pail.klochkov@gmail.com"
   },
   "dependencies": {
     "axios": "^0.24.0",
@@ -32,8 +33,6 @@
     "dedent-js": "^1.0.1"
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.8.0",
-    "@typescript-eslint/parser": "^5.8.0",
     "eslint": "^8.5.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.25.3"
