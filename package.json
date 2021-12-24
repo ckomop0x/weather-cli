@@ -9,7 +9,7 @@
   },
   "type": "module",
   "scripts": {
-    "start": "node index.js",
+    "start": "node weather.js",
     "release": "npm publish --access public"
   },
   "keywords": [
