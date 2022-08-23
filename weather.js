@@ -7,15 +7,9 @@ import getForecast from './helpers/getForecast.js';
 const initCLI = async () => {
   const { h: help, c: city, t: token } = getArgs(process.argv);
 
-  if (help) {
-    return printHelp();
-  }
-  if (city) {
-    return saveCity(city);
-  }
-  if (token) {
-    return saveToken(token);
-  }
+  if (help) return printHelp();
+  if (city) return saveCity(city);
+  if (token) return saveToken(token);
 
   const forecast = await getForecast();
 

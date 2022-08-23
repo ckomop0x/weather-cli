@@ -13,15 +13,10 @@ const getForecast = async () => {
 
     return await getWeather(city);
   } catch (e) {
-    if (e?.response?.status === 404) {
-      printError('Incorrect city provided');
-    } else if (e?.response?.status === 401) {
-      printError('Invalid API KEY provided');
-    } else if (e?.response?.status === 400) {
-      printError('No city provided');
-    } else {
-      printError(e.message);
-    }
+    if (e?.response?.status === 404) printError('Incorrect city provided');
+    else if (e?.response?.status === 401) printError('Invalid API KEY provided');
+    else if (e?.response?.status === 400) printError('No city provided');
+    else printError(e.message);
   }
 };
 
