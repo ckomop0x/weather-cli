@@ -1,7 +1,7 @@
 {
   "name": "@ckomop0x/weather-cli",
   "private": false,
-  "version": "1.0.4",
+  "version": "1.0.6",
   "description": "CLI for getting weather",
   "main": "weather.js",
   "bin": {
@@ -28,13 +28,13 @@
     "email": "pail.klochkov@gmail.com"
   },
   "dependencies": {
-    "axios": "^0.24.0",
-    "chalk": "^5.0.0",
+    "axios": "^0.27.2",
+    "chalk": "^5.0.1",
     "dedent-js": "^1.0.1"
   },
   "devDependencies": {
-    "eslint": "^8.5.0",
+    "eslint": "^8.22.0",
     "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-plugin-import": "^2.25.3"
+    "eslint-plugin-import": "^2.26.0"
   }
 }

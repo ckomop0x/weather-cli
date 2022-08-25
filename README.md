@@ -20,9 +20,7 @@ CLI for getting weather forecast.
 
 ## Install
 
-```sh
-npm install -g @ckomop0x/weather-cli
-```
+
 
 or just run
 
@@ -33,23 +31,35 @@ npx @ckomop0x/weather-cli
 ## Usage
 
 First, you need to add token from https://openweathermap.org/ and 
-city for which you want to get a forecast, and then just run. 
+city for which you want to get a forecast. 
 
+```sh
+npm install -g @ckomop0x/weather-cli
+```
+
+Then add your token 
+```sh
+weather -t <YOUR_TOKEN>
+```
+Then add your favourite city
+```sh
+weather -s <YOUR_CITY>
+```
+And then just run
 ```sh
 weather
 ```
 
-## Run tests
-
+or you can use npx with the same set of flags for city and token
 ```sh
-npm run test
+npx @ckomop0x/weather-cli
 ```
 
 ## Author
 
 👤 **Pavel Klochkov**
 
-* Website: ckomop0x.me
+* Website: [ckomop0x.me](https://ckomop0x.me)
 * Twitter: [@ckomop0x](https://twitter.com/ckomop0x)
 * Github: [@ckomop0x](https://github.com/ckomop0x)
 * LinkedIn: [@ckomop0x](https://linkedin.com/in/ckomop0x)
@@ -68,8 +78,9 @@ Give a ⭐️ if this project helped you!
 
 ## 📝 License
 
-Copyright © 2021 [Pavel Klochkov](https://github.com/ckomop0x) <br />
-This project is [ISC](https://github.com/ckomop0x/weather-cli/blob/master/LICENSE) licensed.
+Copyright © 2022 [Pavel Klochkov](https://github.com/ckomop0x) <br />
+
+[//]: # (This project is [ISC]&#40;https://github.com/ckomop0x/weather-cli/blob/master/LICENSE&#41; licensed.)
 
 ***
 _This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
