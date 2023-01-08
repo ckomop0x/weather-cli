@@ -1,7 +1,7 @@
 {
   "name": "@ckomop0x/weather-cli",
   "private": false,
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "CLI for getting weather",
   "main": "weather.js",
   "bin": {
