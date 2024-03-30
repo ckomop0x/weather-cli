@@ -78,7 +78,7 @@ Give a ⭐️ if this project helped you!
 
 ## 📝 License
 
-Copyright © 2022 [Pavel Klochkov](https://github.com/ckomop0x) <br />
+Copyright © 2024 [Pavel Klochkov](https://github.com/ckomop0x) <br />
 
 [//]: # (This project is [ISC]&#40;https://github.com/ckomop0x/weather-cli/blob/master/LICENSE&#41; licensed.)
 
