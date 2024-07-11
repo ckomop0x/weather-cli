@@ -1,6 +1,6 @@
 import { promises } from 'fs';
 
-const isExist = async (path) => {
+export const isExist = async (path) => {
   try {
     await promises.stat(path);
     return true;
@@ -8,5 +8,3 @@ const isExist = async (path) => {
     return false;
   }
 };
-
-export default isExist;

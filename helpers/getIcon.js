@@ -1,4 +1,4 @@
-const getIcon = (icon) => {
+export const getIcon = (icon) => {
   switch (icon.slice(0, -1)) {
     case '01':
       return '☀️';
@@ -22,5 +22,3 @@ const getIcon = (icon) => {
       return '';
   }
 };
-
-export default getIcon;

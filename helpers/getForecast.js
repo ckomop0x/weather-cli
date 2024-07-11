@@ -3,7 +3,7 @@ import { printError } from '../services/log.service.js';
 import { loadKeyValue } from '../services/storage.service.js';
 import { SETTINGS } from './const.js';
 
-const getForecast = async () => {
+export const getForecast = async () => {
   try {
     const city = process.env.CITY ?? await loadKeyValue(SETTINGS.city);
 
@@ -19,5 +19,3 @@ const getForecast = async () => {
     else printError(e.message);
   }
 };
-
-export default getForecast;

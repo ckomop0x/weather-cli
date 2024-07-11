@@ -1,4 +1,4 @@
-const getArgs = (args) => {
+export const getArgs = (args) => {
   const res = {};
   const [, , ...rest] = args;
   rest.forEach((value, index, array) => {
@@ -11,5 +11,3 @@ const getArgs = (args) => {
 
   return res;
 };
-
-export default getArgs;
