@@ -11,6 +11,7 @@
   "scripts": {
     "start": "node weather.js",
     "lint": "eslint \"./**/*.{ts,tsx,js}\" --fix",
+    "lint:check": "eslint \"./**/*.{ts,tsx,js}\"",
     "release": "npm publish --access public"
   },
   "keywords": [
