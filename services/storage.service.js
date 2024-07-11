@@ -1,7 +1,7 @@
 import { homedir } from 'os';
 import { join } from 'path';
 import { promises } from 'fs';
-import isExist from '../helpers/isExist.js';
+import { isExist } from '../helpers/isExist.js';
 import { CONFIG_FILE } from '../helpers/const.js';
 
 const filePath = join(homedir(), CONFIG_FILE);
