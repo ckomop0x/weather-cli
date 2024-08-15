@@ -4,7 +4,7 @@ export const isExist = async (path) => {
   try {
     await promises.stat(path);
     return true;
-  } catch (e) {
+  } catch {
     return false;
   }
 };
