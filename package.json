@@ -35,8 +35,8 @@
     "dedent-js": "^1.0.1"
   },
   "devDependencies": {
-    "@eslint/js": "9.37.0",
-    "eslint": "9.37.0",
+    "@eslint/js": "9.39.1",
+    "eslint": "9.39.1",
     "globals": "16.4.0"
   }
 }
