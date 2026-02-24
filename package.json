@@ -1,18 +1,19 @@
 {
   "name": "@ckomop0x/weather-cli",
   "private": false,
-  "version": "1.1.0",
+  "version": "2.0.0",
   "description": "CLI for getting weather",
   "main": "weather.js",
   "bin": {
     "weather": "weather.js"
   },
   "type": "module",
+  "packageManager": "pnpm@10.19.0",
   "scripts": {
     "start": "node weather.js",
     "lint": "eslint \"./**/*.{ts,tsx,js}\" --fix",
     "lint:check": "eslint \"./**/*.{ts,tsx,js}\"",
-    "release": "npm publish --access public"
+    "release": "pnpm publish --access public"
   },
   "keywords": [
     "cli",
