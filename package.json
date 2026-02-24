@@ -3,17 +3,24 @@
   "private": false,
   "version": "2.0.0",
   "description": "CLI for getting weather",
-  "main": "weather.js",
+  "main": "dist/weather.js",
   "bin": {
-    "weather": "weather.js"
+    "weather": "dist/weather.js"
   },
+  "files": [
+    "dist"
+  ],
   "type": "module",
   "packageManager": "pnpm@10.19.0",
   "scripts": {
-    "start": "node weather.js",
-    "lint": "eslint \"./**/*.{ts,tsx,js}\" --fix",
-    "lint:check": "eslint \"./**/*.{ts,tsx,js}\"",
-    "release": "pnpm publish --access public"
+    "build": "tsc",
+    "start": "tsx weather.ts",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "lint": "eslint \"./**/*.{ts,tsx}\" --fix",
+    "lint:check": "eslint \"./**/*.{ts,tsx}\"",
+    "release": "pnpm build && pnpm publish --access public"
   },
   "keywords": [
     "cli",
@@ -37,7 +44,13 @@
   },
   "devDependencies": {
     "@eslint/js": "10.0.1",
+    "@types/node": "^25.3.0",
+    "@vitest/coverage-v8": "^4.0.18",
     "eslint": "10.0.1",
-    "globals": "17.3.0"
+    "globals": "17.3.0",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.56.1",
+    "vitest": "^4.0.18"
   }
 }

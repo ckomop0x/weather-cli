@@ -1,5 +1,7 @@
-export const getArgs = (args) => {
-  const res = {};
+export type Args = Record<string, string | true>;
+
+export const getArgs = (args: string[]): Args => {
+  const res: Args = {};
   const [, , ...rest] = args;
   rest.forEach((value, index, array) => {
     if (value.charAt(0) === '-') {
@@ -11,3 +13,4 @@ export const getArgs = (args) => {
 
   return res;
 };
+
