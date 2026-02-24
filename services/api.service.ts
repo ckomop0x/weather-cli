@@ -22,7 +22,7 @@ export interface WeatherData {
 }
 
 export const getWeather = async (city: string): Promise<WeatherData> => {
-  const token = process.env.TOKEN ?? await loadKeyValue(SETTINGS.token);
+  const token = process.env.TOKEN ?? (await loadKeyValue(SETTINGS.token));
 
   if (!token) {
     throw new Error('No API key defined, please add key with -t [API_KEY]');
@@ -39,4 +39,3 @@ export const getWeather = async (city: string): Promise<WeatherData> => {
 
   return data;
 };
-

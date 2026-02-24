@@ -11,19 +11,28 @@ describe('getArgs', () => {
   });
 
   it('parses a flag with a string value (-c London)', () => {
-    expect(getArgs(['node', 'weather.js', '-c', 'London'])).toEqual({ c: 'London' });
+    expect(getArgs(['node', 'weather.js', '-c', 'London'])).toEqual({
+      c: 'London',
+    });
   });
 
   it('parses a flag with a string value (-t token)', () => {
-    expect(getArgs(['node', 'weather.js', '-t', 'mytoken123'])).toEqual({ t: 'mytoken123' });
+    expect(getArgs(['node', 'weather.js', '-t', 'mytoken123'])).toEqual({
+      t: 'mytoken123',
+    });
   });
 
   it('parses multiple flags with and without values', () => {
-    expect(getArgs(['node', 'weather.js', '-c', 'Paris', '-h'])).toEqual({ c: 'Paris', h: true });
+    expect(getArgs(['node', 'weather.js', '-c', 'Paris', '-h'])).toEqual({
+      c: 'Paris',
+      h: true,
+    });
   });
 
   it('treats a flag immediately followed by another flag as true', () => {
-    expect(getArgs(['node', 'weather.js', '-h', '-c', 'London'])).toEqual({ h: true, c: 'London' });
+    expect(getArgs(['node', 'weather.js', '-h', '-c', 'London'])).toEqual({
+      h: true,
+      c: 'London',
+    });
   });
 });
-

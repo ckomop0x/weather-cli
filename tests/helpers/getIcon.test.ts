@@ -19,4 +19,3 @@ describe('getIcon', () => {
     expect(getIcon(code)).toBe(expected);
   });
 });
-

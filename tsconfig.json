@@ -11,15 +11,6 @@
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true
   },
-  "include": [
-    "weather.ts",
-    "helpers/**/*.ts",
-    "services/**/*.ts"
-  ],
-  "exclude": [
-    "node_modules",
-    "dist",
-    "tests"
-  ]
+  "include": ["weather.ts", "helpers/**/*.ts", "services/**/*.ts"],
+  "exclude": ["node_modules", "dist", "tests"]
 }
-

@@ -31,4 +31,3 @@ export const printWeather = (forecast: WeatherData): void => {
   Wind speed: ${forecast.wind.speed} km/h`,
   );
 };
-

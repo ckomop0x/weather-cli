@@ -8,4 +8,3 @@ export const isExist = async (path: string): Promise<boolean> => {
     return false;
   }
 };
-
