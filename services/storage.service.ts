@@ -6,23 +6,24 @@ import { CONFIG_FILE } from '../helpers/const.js';
 
 const filePath = join(homedir(), CONFIG_FILE);
 
-export const saveKeyValue = async (key, value) => {
-  let data = {};
+export const saveKeyValue = async (key: string, value: string): Promise<void> => {
+  let data: Record<string, string> = {};
 
   if (await isExist(filePath)) {
     const file = await promises.readFile(filePath);
-    data = JSON.parse(file);
+    data = JSON.parse(file.toString()) as Record<string, string>;
   }
 
   data[key] = value;
   await promises.writeFile(filePath, JSON.stringify(data));
 };
 
-export const loadKeyValue = async (key) => {
-  let data;
+export const loadKeyValue = async (key: string): Promise<string | undefined> => {
   if (await isExist(filePath)) {
     const file = await promises.readFile(filePath);
-    data = JSON.parse(file);
+    const data = JSON.parse(file.toString()) as Record<string, string>;
+    return data[key];
   }
-  return data?.[key];
+  return undefined;
 };
+

@@ -1,4 +1,4 @@
-export const getIcon = (icon) => {
+export const getIcon = (icon: string): string => {
   switch (icon.slice(0, -1)) {
     case '01':
       return '☀️';
@@ -22,3 +22,4 @@ export const getIcon = (icon) => {
       return '';
   }
 };
+
