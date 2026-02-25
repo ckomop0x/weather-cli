@@ -12,6 +12,9 @@
   <a href="https://twitter.com/ckomop0x" target="_blank">
     <img alt="Twitter: ckomop0x" src="https://img.shields.io/twitter/follow/ckomop0x.svg?style=social" />
   </a>
+  <a href="https://codecov.io/gh/ckomop0x/weather-cli">
+    <img src="https://codecov.io/gh/ckomop0x/weather-cli/graph/badge.svg?token=1MQTX7X8PK"/>
+  </a>
 </p>
 
 CLI for getting weather forecast.
@@ -19,6 +22,10 @@ CLI for getting weather forecast.
 ### 🏠 [Homepage](https://github.com/ckomop0x/weather-cli)
 
 ## Install
+
+```sh
+npm install -g @ckomop0x/weather-cli
+```
 
 or just run
 
@@ -30,10 +37,6 @@ npx @ckomop0x/weather-cli
 
 First, you need to add token from https://openweathermap.org/ and
 city for which you want to get a forecast.
-
-```sh
-npm install -g @ckomop0x/weather-cli
-```
 
 Then add your token
 
@@ -82,9 +85,9 @@ Give a ⭐️ if this project helped you!
 
 ## 📝 License
 
-Copyright © 2024 [Pavel Klochkov](https://github.com/ckomop0x) <br />
+Copyright © 2026 [Pavel Klochkov](https://github.com/ckomop0x) <br />
 
-[//]: # 'This project is [ISC](https://github.com/ckomop0x/weather-cli/blob/master/LICENSE) licensed.'
+This project is [ISC](https://github.com/ckomop0x/weather-cli/blob/master/LICENSE) licensed.
 
 ---
 
