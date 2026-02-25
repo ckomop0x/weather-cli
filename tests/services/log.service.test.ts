@@ -1,6 +1,11 @@
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
 import type { WeatherData } from '../../services/api.service.js';
-import { printError, printSuccess, printHelp, printWeather } from '../../services/log.service.js';
+import {
+  printError,
+  printSuccess,
+  printHelp,
+  printWeather,
+} from '../../services/log.service.js';
 
 describe('log.service', () => {
   beforeEach(() => {
@@ -16,7 +21,9 @@ describe('log.service', () => {
       printError('Something went wrong');
       expect(console.log).toHaveBeenCalledOnce();
       expect(vi.mocked(console.log).mock.calls[0][0]).toContain('ERROR');
-      expect(vi.mocked(console.log).mock.calls[0][0]).toContain('Something went wrong');
+      expect(vi.mocked(console.log).mock.calls[0][0]).toContain(
+        'Something went wrong',
+      );
     });
   });
 
@@ -76,4 +83,3 @@ describe('log.service', () => {
     });
   });
 });
-

@@ -21,8 +21,9 @@ describe('isExist', () => {
   });
 
   it('returns false when the path does not exist', async () => {
-    vi.mocked(promises.stat).mockRejectedValue(new Error('ENOENT: no such file or directory'));
+    vi.mocked(promises.stat).mockRejectedValue(
+      new Error('ENOENT: no such file or directory'),
+    );
     expect(await isExist('/nonexistent/path')).toBe(false);
   });
 });
-

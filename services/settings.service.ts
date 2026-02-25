@@ -27,4 +27,3 @@ export const saveCity = async (city: string): Promise<void> => {
     printError((e as Error).message);
   }
 };
-

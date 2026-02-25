@@ -6,9 +6,7 @@
     ":dependencyDashboard",
     ":ignoreUnstable"
   ],
-  "labels": [
-    "[bot] renovate"
-  ],
+  "labels": ["[bot] renovate"],
   "prConcurrentLimit": 5,
   "rebaseWhen": "auto"
 }

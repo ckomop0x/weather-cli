@@ -22,4 +22,3 @@ export const getIcon = (icon: string): string => {
       return '';
   }
 };
-

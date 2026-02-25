@@ -57,7 +57,9 @@ describe('getForecast', () => {
 
     await getForecast();
 
-    expect(printError).toHaveBeenCalledWith('No city defined, please add default city -c [CITY]');
+    expect(printError).toHaveBeenCalledWith(
+      'No city defined, please add default city -c [CITY]',
+    );
     expect(getWeather).not.toHaveBeenCalled();
   });
 
@@ -106,4 +108,3 @@ describe('getForecast', () => {
     expect(printError).toHaveBeenCalledWith('Unknown error');
   });
 });
-

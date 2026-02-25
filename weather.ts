@@ -16,4 +16,3 @@ const initCLI = async (): Promise<void> => {
 };
 
 initCLI();
-
