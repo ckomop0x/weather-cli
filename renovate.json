@@ -1,12 +1,14 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "bumpVersion": "patch",
   "extends": [
     "config:best-practices",
     ":semanticCommits",
     ":dependencyDashboard",
     ":ignoreUnstable"
   ],
-  "labels": ["[bot] renovate"],
-  "prConcurrentLimit": 5,
-  "rebaseWhen": "auto"
+  "labels": [
+    "[bot] renovate"
+  ],
+  "rebaseWhen": "never"
 }
