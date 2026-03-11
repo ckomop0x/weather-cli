@@ -1,7 +1,7 @@
 {
   "name": "@ckomop0x/weather-cli",
   "private": false,
-  "version": "2.0.5",
+  "version": "2.0.6",
   "description": "CLI for getting weather",
   "main": "dist/weather.js",
   "bin": {
@@ -58,7 +58,7 @@
     "@eslint/js": "10.0.1",
     "@types/node": "25.3.5",
     "@vitest/coverage-v8": "4.0.18",
-    "eslint": "10.0.2",
+    "eslint": "10.0.3",
     "globals": "17.4.0",
     "husky": "9.1.7",
     "lint-staged": "16.3.2",
