@@ -1,7 +1,7 @@
 {
   "name": "@ckomop0x/weather-cli",
   "private": false,
-  "version": "2.0.10",
+  "version": "2.0.11",
   "description": "CLI for getting weather",
   "main": "dist/weather.js",
   "bin": {
@@ -11,7 +11,7 @@
     "dist"
   ],
   "type": "module",
-  "packageManager": "pnpm@10.32.0",
+  "packageManager": "pnpm@10.32.1",
   "scripts": {
     "prepare": "husky",
     "build": "tsc",
