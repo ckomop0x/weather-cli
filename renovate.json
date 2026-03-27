@@ -7,8 +7,6 @@
     ":dependencyDashboard",
     ":ignoreUnstable"
   ],
-  "labels": [
-    "[bot] renovate"
-  ],
+  "labels": ["[bot] renovate"],
   "rebaseWhen": "never"
 }
