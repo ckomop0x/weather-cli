@@ -8,7 +8,7 @@ on:
 
 jobs:
   test:
-    uses: ckomop0x/shared-workflows/.github/workflows/unit-tests.yml@main
+    uses: ckomop0x/shared-workflows/.github/workflows/unit-tests.yml@3970e0e13e7b3b01bcceb2c7935f7866abbff311 # main
     with:
       node_version: '24'
     secrets:
