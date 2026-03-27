@@ -9,7 +9,8 @@
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true
+    "forceConsistentCasingInFileNames": true,
+    "types": ["node"]
   },
   "include": ["weather.ts", "helpers/**/*.ts", "services/**/*.ts"],
   "exclude": ["node_modules", "dist", "tests"]
