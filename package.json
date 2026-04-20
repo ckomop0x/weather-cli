@@ -1,7 +1,7 @@
 {
   "name": "@ckomop0x/weather-cli",
   "private": false,
-  "version": "2.0.28",
+  "version": "2.0.29",
   "description": "CLI for getting weather",
   "main": "dist/weather.js",
   "bin": {
@@ -65,7 +65,7 @@
     "prettier": "3.8.2",
     "tsx": "4.21.0",
     "typescript": "6.0.2",
-    "typescript-eslint": "8.57.2",
+    "typescript-eslint": "8.58.2",
     "vitest": "4.1.4"
   }
 }
